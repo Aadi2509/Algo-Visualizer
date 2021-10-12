@@ -1,0 +1,58 @@
+.typing1 {
+    /* animation: type 3s steps(20) step-end; */
+    animation: type 3s steps(20, end),blink-caret 0.75s step-end infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: consolas, "Courier New", monospace;
+    border-right: 2px solid black;
+    width: 21ch;
+    font-size:5rem;
+    letter-spacing:1px;
+    font-weight:900;
+  }
+
+  
+
+  
+  @keyframes type {
+    0% {
+      width: 0ch;
+    }
+    100% {
+      width: 21ch;
+    }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+  }
+
+ 
+
+  .algoVisualizer{
+    margin: 1% 0 1% 5%;
+  }
+
+  #large {
+    font-size:2rem;
+  }
+
+  .nav {
+      margin-left:auto;
+      margin-right:5%;
+  }
+
+  .Heading {
+      height:500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+   
+
+
+  /* .navitems{
+      display: flex;
+      flex-direction: row;
+  } */
