@@ -50,9 +50,12 @@
       align-items: center;
   }
    
-
+  .sorts{
+    text-align: center;
+  }
 
   /* .navitems{
       display: flex;
       flex-direction: row;
   } */
+

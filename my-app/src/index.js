@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 // import Navbar from './Components/navbar';
 // import Heading from './Components/heading';
 import App from './Components/App';
+import 'semantic-ui-css/semantic.min.css'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
