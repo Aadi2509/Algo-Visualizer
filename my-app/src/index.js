@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Navbar from './Components/navbar';
-import Heading from './Components/heading';
+// import Navbar from './Components/navbar';
+// import Heading from './Components/heading';
+import App from './Components/App';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Navbar></Navbar>
-    <Heading></Heading>
+    <App></App>
   </React.StrictMode>,
   document.getElementById('root')
 );
