@@ -4,7 +4,7 @@ import 'semantic-ui-css/semantic.min.css'
 
 const CardExampleGroups = () => (
   <Card.Group>
-    <Card style={{margin:"0 auto"}}>
+    <Card style={{marginLeft:"auto",marginRight:"auto"}}>
       <Card.Content>
         <Card.Header>Bubble Sort</Card.Header>
         <Card.Meta>Friends of Elliot</Card.Meta>

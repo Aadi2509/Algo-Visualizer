@@ -54,6 +54,26 @@
     text-align: center;
   }
 
+  .footer{
+    width: 100%;
+    height:10%;
+    background-color: black;
+    /* position: fixed;
+    bottom: 0; */
+    margin:auto auto;
+    text-align: center;
+  }
+
+  .footerContent{
+    color: white;
+    display: block;
+  }
+  
+  .icon{
+    margin:1px 5px;
+    color: white;
+  }
+
   /* .navitems{
       display: flex;
       flex-direction: row;
