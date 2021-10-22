@@ -6,7 +6,7 @@ const CardExampleGroups = (props) => (
   <Card.Group>
     <Card style={{marginLeft:"auto",marginRight:"auto"}}>
       <Card.Content>
-        <Card.Header>{props.name}</Card.Header>
+        <Card.Header style={{color: "#1C7947"}}>{props.name}</Card.Header>
         <Card.Meta>{props.type}</Card.Meta>
         <Card.Description>
           {/* Steve wants to add you to the group <strong>best friends</strong> */}

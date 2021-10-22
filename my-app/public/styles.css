@@ -41,10 +41,12 @@
   .nav {
       margin-left:auto;
       margin-right:5%;
+      font-weight: 400;
+      font-size: 1.25rem;
   }
 
   .Heading {
-      height:500px;
+      height:550px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -57,11 +59,12 @@
   .footer{
     width: 100%;
     height:10%;
-    background-color: black;
+    background-color: #191A19;
     /* position: fixed;
     bottom: 0; */
     margin:auto auto;
     text-align: center;
+    padding: 2% 0%;
   }
 
   .footerContent{
@@ -79,3 +82,12 @@
       flex-direction: row;
   } */
 
+  /*****************Section titile*****************/
+  /* .sectionTitle{
+    margin: 2% auto 2% 3%;
+  } */
+
+  /*************Coloumn**************/
+  .cardMargin{
+    margin-bottom: 2.5%;
+  }

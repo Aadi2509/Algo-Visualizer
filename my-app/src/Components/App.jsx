@@ -18,14 +18,14 @@ function App()
       <div>
         <SectionTitle heading="Quadratic Sorting Algorithms"></SectionTitle>
       
-        <Container>
+        <Container style={{marginBottom:"5%"}}>
           <Row xs="1" sm="2" md="3">
             {/* <Col>  <Card></Card> </Col>
             <Col >  <Card></Card> </Col>
             <Col>  <Card></Card> </Col> */}
             {quadraticContent.map(content => {
                return (
-                <Col> <Card 
+                <Col className="cardMargin"> <Card 
                   key={content.id}
                   name={content.name}
                   type={content.type}
@@ -37,15 +37,15 @@ function App()
         </Container>
       </div>
       <div>
-        <SectionTitle heading="Logarithmic Sorting Algorithms"></SectionTitle>
-        <Container>
+        <SectionTitle  heading="Logarithmic Sorting Algorithms"></SectionTitle>
+        <Container style={{marginBottom:"5%"}}>
           <Row xs="1" sm="2" md="3">
             {/* <Col>  <Card></Card> </Col>
             <Col >  <Card></Card> </Col>
             <Col>  <Card></Card> </Col>  */}
             {logContent.map(content => {
                return (
-                <Col> <Card 
+                <Col className="cardMargin"> <Card 
                   key={content.id}
                   name={content.name}
                   type={content.type}

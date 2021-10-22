@@ -3,7 +3,7 @@ import { Header } from 'semantic-ui-react'
 
 const HeaderExamplePage = (props) => (
   <div>
-    <Header as='h2'>{props.heading}</Header>
+    <Header style={{ marginLeft:"5%",marginTop:"1%",marginBottom:"5%"}} as='h1'>{props.heading}</Header>
   </div>
 )
 
