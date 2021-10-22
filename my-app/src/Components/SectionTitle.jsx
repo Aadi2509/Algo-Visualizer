@@ -1,9 +1,9 @@
 import React from 'react'
 import { Header } from 'semantic-ui-react'
 
-const HeaderExamplePage = () => (
+const HeaderExamplePage = (props) => (
   <div>
-    <Header as='h2'>Second Header</Header>
+    <Header as='h2'>{props.heading}</Header>
   </div>
 )
 

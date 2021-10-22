@@ -7,34 +7,54 @@ import 'semantic-ui-css/semantic.min.css'
 import SectionTitle from "./SectionTitle";
 import Card from "./Card";
 import { Container, Row, Col } from 'reactstrap';
+import {quadraticContent,logContent} from "../cardContent";
 
 function App()
 {
     return (
     <React.StrictMode>
-       <Navbar></Navbar>
+      <Navbar></Navbar>
       <Heading></Heading>
       <div>
-      <SectionTitle></SectionTitle>
-      <Container>
-      <Row xs="1" sm="2" md="3">
-        <Col>  <Card></Card> </Col>
-        <Col >  <Card></Card> </Col>
-        <Col>  <Card></Card> </Col>
-
-      </Row>
-      </Container>
+        <SectionTitle heading="Quadratic Sorting Algorithms"></SectionTitle>
+      
+        <Container>
+          <Row xs="1" sm="2" md="3">
+            {/* <Col>  <Card></Card> </Col>
+            <Col >  <Card></Card> </Col>
+            <Col>  <Card></Card> </Col> */}
+            {quadraticContent.map(content => {
+               return (
+                <Col> <Card 
+                  key={content.id}
+                  name={content.name}
+                  type={content.type}
+                  description={content.description}
+                /> </Col>
+              );
+            })};
+          </Row>
+        </Container>
       </div>
       <div>
-      <SectionTitle></SectionTitle>
-      <Container>
-      <Row xs="1" sm="2" md="3">
-        <Col>  <Card></Card> </Col>
-        <Col >  <Card></Card> </Col>
-        <Col>  <Card></Card> </Col>
-        
-      </Row>
-      </Container>
+        <SectionTitle heading="Logarithmic Sorting Algorithms"></SectionTitle>
+        <Container>
+          <Row xs="1" sm="2" md="3">
+            {/* <Col>  <Card></Card> </Col>
+            <Col >  <Card></Card> </Col>
+            <Col>  <Card></Card> </Col>  */}
+            {logContent.map(content => {
+               return (
+                <Col> <Card 
+                  key={content.id}
+                  name={content.name}
+                  type={content.type}
+                  description={content.description}
+                /> </Col>
+              );
+            })};
+          </Row>
+        </Container>
       </div>
       
       <Footer></Footer>

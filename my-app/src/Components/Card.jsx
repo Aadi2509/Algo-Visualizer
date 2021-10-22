@@ -2,14 +2,15 @@ import React from 'react'
 import { Button, Card, Image } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css'
 
-const CardExampleGroups = () => (
+const CardExampleGroups = (props) => (
   <Card.Group>
     <Card style={{marginLeft:"auto",marginRight:"auto"}}>
       <Card.Content>
-        <Card.Header>Bubble Sort</Card.Header>
-        <Card.Meta>Friends of Elliot</Card.Meta>
+        <Card.Header>{props.name}</Card.Header>
+        <Card.Meta>{props.type}</Card.Meta>
         <Card.Description>
-          Steve wants to add you to the group <strong>best friends</strong>
+          {/* Steve wants to add you to the group <strong>best friends</strong> */}
+          {props.description}
         </Card.Description>
       </Card.Content>
       <Card.Content extra>
