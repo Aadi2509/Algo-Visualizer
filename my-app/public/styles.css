@@ -1,5 +1,4 @@
-.typing1 {
-    /* animation: type 3s steps(20) step-end; */
+/* .typing1 {
     animation: type 3s steps(20, end),blink-caret 0.75s step-end infinite;
     overflow: hidden;
     white-space: nowrap;
@@ -26,11 +25,11 @@
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: black }
-  }
+  } */
 
- 
+ /* animation: type 3s steps(20) step-end; */
 
-  .algoVisualizer{
+  /* .algoVisualizer{
     margin: 1% 0 1% 5%;
   }
 
@@ -43,26 +42,21 @@
       margin-right:5%;
       font-weight: 400;
       font-size: 1.25rem;
-  }
+  } */
 
-  .Heading {
-      height:550px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
+ 
    
   .sorts{
     text-align: center;
   }
 
-  .footer{
+  /* .footer{
     width: 100%;
     height:10%;
-    background-color: #191A19;
+    background-color: #191A19; */
     /* position: fixed;
     bottom: 0; */
-    margin:auto auto;
+    /* margin:auto auto;
     text-align: center;
     padding: 2% 0%;
   }
@@ -75,7 +69,7 @@
   .icon{
     margin:1px 5px;
     color: white;
-  }
+  } */
 
   /* .navitems{
       display: flex;
@@ -88,6 +82,6 @@
   } */
 
   /*************Coloumn**************/
-  .cardMargin{
+  /* .cardMargin{
     margin-bottom: 2.5%;
-  }
+  } */

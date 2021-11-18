@@ -13,6 +13,7 @@ import {
   // DropdownItem,
   // NavbarText
 } from 'reactstrap';
+import '../styles/navbar.css';
 
 
 const Example = (props) => {

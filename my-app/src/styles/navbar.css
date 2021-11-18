@@ -1,0 +1,14 @@
+.algoVisualizer{
+    margin: 1% 0 1% 5%;
+  }
+
+  #large {
+    font-size:2rem;
+  }
+
+  .nav {
+      margin-left:auto;
+      margin-right:5%;
+      font-weight: 400;
+      font-size: 1.25rem;
+  }
