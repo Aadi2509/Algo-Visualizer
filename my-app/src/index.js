@@ -3,14 +3,24 @@ import ReactDOM from 'react-dom';
 // import Navbar from './Components/navbar';
 // import Heading from './Components/heading';
 import App from './Components/App';
+import Quadratic from "./Components/Quadratic";
+import Logarithmic  from "./Components/Logarithmic";
+
 import 'semantic-ui-css/semantic.min.css'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {BrowserRouter as Router, Routes,Route} from "react-router-dom";
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App></App>
+  <Router>
+  <Routes>
+    <Route path="/" element={<App />} />
+    <Route path="/quadratic" element={<Quadratic />} />
+    <Route path="/logarithmic" element={<Logarithmic />} />
+  </Routes>
+  </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

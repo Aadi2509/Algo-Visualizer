@@ -14,7 +14,7 @@ import {
   // NavbarText
 } from 'reactstrap';
 import '../styles/navbar.css';
-
+import {Link} from "react-router-dom";
 
 const Example = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,11 +31,15 @@ const Example = (props) => {
             
             
             <NavItem style={{marginRight:"15px"}}>
-            <NavLink href="/components/"  >Quadratic Algorithm</NavLink>
+            <Link to="/quadratic">
+            <NavLink >Quadratic Algorithm</NavLink>
+            </Link>
             </NavItem>
 
             <NavItem>
+            <Link to="/logarithmic">
             <NavLink href="/components/">Logarithmic Algorithm</NavLink>
+            </Link>
             </NavItem>
             
 
