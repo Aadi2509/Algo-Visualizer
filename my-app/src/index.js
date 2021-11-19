@@ -5,20 +5,24 @@ import ReactDOM from 'react-dom';
 import App from './Components/App';
 import Quadratic from "./Components/Quadratic";
 import Logarithmic  from "./Components/Logarithmic";
+import FoundSort from "./Components/Found Sort";
 
 import 'semantic-ui-css/semantic.min.css'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router, Routes,Route} from "react-router-dom";
 
+//Can implement React-dom nesting
+//Q and L are used as capitals but can be used properly by using lodash
 
 ReactDOM.render(
   <React.StrictMode>
   <Router>
   <Routes>
     <Route path="/" element={<App />} />
-    <Route path="/quadratic" element={<Quadratic />} />
-    <Route path="/logarithmic" element={<Logarithmic />} />
+    <Route path="/Quadratic" exact element={<Quadratic />} />
+    <Route path="/Logarithmic" exact element={<Logarithmic />} />
+    <Route path="/:type/:name" element={<FoundSort />} />
   </Routes>
   </Router>
   </React.StrictMode>,
