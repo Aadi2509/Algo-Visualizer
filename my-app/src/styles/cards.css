@@ -1,3 +1,14 @@
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .cardMargin{
     margin-bottom: 2.5%;
+  }
+
+  .cards__title{
+    align-self: flex-start !important;
   }

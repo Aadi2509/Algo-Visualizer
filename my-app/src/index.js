@@ -6,6 +6,8 @@ import App from './Components/App';
 import Quadratic from "./Components/Quadratic";
 import Logarithmic  from "./Components/Logarithmic";
 import FoundSort from "./Components/Found Sort";
+import Navbar from "./Components/navbar";
+import Footer from "./Components/Footer";
 
 import 'semantic-ui-css/semantic.min.css'
 
@@ -18,12 +20,14 @@ import {BrowserRouter as Router, Routes,Route} from "react-router-dom";
 ReactDOM.render(
   <React.StrictMode>
   <Router>
+  <Navbar />
   <Routes>
     <Route path="/" element={<App />} />
     <Route path="/Quadratic" exact element={<Quadratic />} />
     <Route path="/Logarithmic" exact element={<Logarithmic />} />
     <Route path="/:type/:name" element={<FoundSort />} />
   </Routes>
+  <Footer />
   </Router>
   </React.StrictMode>,
   document.getElementById('root')

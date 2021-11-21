@@ -6,8 +6,8 @@ import '../styles/cards.css';
 import {Link} from "react-router-dom";
 
 function Cards(props){
-    return (<div>
-        <SectionTitle heading={props.heading}></SectionTitle>
+    return (<div className="cards">
+        <SectionTitle heading={props.heading} className="cards__title"></SectionTitle>
       
         <Container style={{marginBottom:"5%"}}>
           <Row xs="1" sm="2" md="3">

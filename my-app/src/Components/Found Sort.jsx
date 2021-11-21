@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
-import Navbar from "./navbar";
-import Footer from "./Footer";
 import {useParams} from "react-router-dom";
 import BubbleSort from "./Sorts/Bubble Sort";
 import InsertionSort from "./Sorts/Insertion Sort";
@@ -42,9 +39,7 @@ function FoundSort(){
     }
 
     return(<>
-    <Navbar />
     {findSort()}
-    <Footer />
     </>)
 
 };
