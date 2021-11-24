@@ -1,0 +1,27 @@
+.testcard {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 3rem 2rem;
+    min-height: 30rem;
+    max-width: 28rem;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 25px;
+    background-color: #ffffff;
+    box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden; 
+  }
+
+  .circle{
+      width: 80%;
+      height: 80%;
+      background-color: black;
+      border-radius: 50%;
+      position: absolute;
+      top:-25%;
+      right:-25%;
+      
+  }

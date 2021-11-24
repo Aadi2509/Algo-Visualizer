@@ -1,0 +1,9 @@
+.card{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.card__header{
+    color: #1C7947;
+}
+

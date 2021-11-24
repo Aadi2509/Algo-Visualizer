@@ -2,12 +2,14 @@ import React from 'react'
 import { Button, Card, Image } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css'
 import {Link} from "react-router-dom";
+import _ from "lodash";
+import "../styles/card.css";
 
 const CardExampleGroups = (props) => (
   <Card.Group>
-    <Card style={{marginLeft:"auto",marginRight:"auto"}}>
+    <Card >
       <Card.Content>
-        <Card.Header style={{color: "#1C7947"}}>{props.name}</Card.Header>
+        <Card.Header>{props.name}</Card.Header>
         <Card.Meta>{props.type}</Card.Meta>
         <Card.Description>
           {/* Steve wants to add you to the group <strong>best friends</strong> */}
@@ -16,10 +18,11 @@ const CardExampleGroups = (props) => (
       </Card.Content>
       <Card.Content extra>
         <div className='ui two buttons'>
-          {/* <Button basic color='green'>
+          {/* <Button basic color='green'> 
             Visualize it!
           </Button> */}
-          <Link to={`/${props.type}/${props.name}`} >
+
+          <Link to={`/${props.type}/${props.name}`}>
           <Button inverted color='green'>
             Visualize it!
           </Button>
@@ -69,7 +72,13 @@ const CardExampleGroups = (props) => (
           </Button>
         </div>
       </Card.Content>
-    </Card> */}
+    </Card>
+    
+    styling
+    style={{color: "#1C7947"}}
+    style={{marginLeft:"auto",marginRight:"auto"}}
+
+     */}
   </Card.Group>
 )
 
