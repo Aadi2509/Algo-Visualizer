@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, Card, Image } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css'
+import {Link} from "react-router-dom";
 
 const CardExampleGroups = (props) => (
   <Card.Group>
@@ -18,9 +19,11 @@ const CardExampleGroups = (props) => (
           {/* <Button basic color='green'>
             Visualize it!
           </Button> */}
+          <Link to={`/${props.type}/${props.name}`} >
           <Button inverted color='green'>
             Visualize it!
           </Button>
+          </Link>
         </div>
       </Card.Content>
     </Card>
