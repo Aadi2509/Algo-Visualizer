@@ -4,7 +4,7 @@ import '../styles/heading.css';
 function heading(){
 
 return (<div className="Heading">
-<div>
+<div className="backgroundImage">
 <h1 className="typing1" >Algorithm <span>Visualizer</span> </h1>
 
 {/* <h1 className="typing" >Visualizer</h1> */}
