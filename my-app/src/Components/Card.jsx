@@ -5,6 +5,14 @@ import {Link} from "react-router-dom";
 import _ from "lodash";
 import "../styles/card.css";
 
+function getLink(type,name)
+{
+  type=_.lowerCase(type);
+  name=_.lowerCase(name);
+
+  return `/${type}/${name}`;
+}
+
 const CardExampleGroups = (props) => (
   <Card.Group>
     <Card >
@@ -22,7 +30,7 @@ const CardExampleGroups = (props) => (
             Visualize it!
           </Button> */}
 
-          <Link to={`/${props.type}/${props.name}`}>
+          <Link to={getLink(props.type,props.name)}>
           <Button inverted color='green'>
             Visualize it!
           </Button>

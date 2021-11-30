@@ -31,13 +31,13 @@ const Example = (props) => {
             
             
             <NavItem style={{marginRight:"15px"}}>
-            <Link to="/Quadratic">
+            <Link to="/quadratic">
             <NavLink >Quadratic Algorithm</NavLink>
             </Link>
             </NavItem>
 
             <NavItem>
-            <Link to="/Logarithmic">
+            <Link to="/logarithmic">
             <NavLink href="/components/">Logarithmic Algorithm</NavLink>
             </Link>
             </NavItem>

@@ -23,8 +23,8 @@ ReactDOM.render(
   <Navbar />
   <Routes>
     <Route path="/" element={<App />} />
-    <Route path="/Quadratic" exact element={<Quadratic />} />
-    <Route path="/Logarithmic" exact element={<Logarithmic />} />
+    <Route path="/quadratic" exact element={<Quadratic />} />
+    <Route path="/logarithmic" exact element={<Logarithmic />} />
     <Route path="/:type/:name" element={<FoundSort />} />
   </Routes>
   <Footer />

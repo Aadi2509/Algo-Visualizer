@@ -22,17 +22,17 @@ function FoundSort(){
 
     function findSort()
     {
-        if(name=="Bubble Sort")
+        if(name=="bubble sort")
         return <BubbleSort />
-        else if(name=="Insertion Sort")
+        else if(name=="insertion sort")
         return <InsertionSort />
-        else if(name=="Selection Sort")
+        else if(name=="selection sort")
         return <SelectionSort />;
-        else if(name=="Merge Sort")
+        else if(name=="merge sort")
         return <MergeSort />
-        else if(name=="Quick Sort")
+        else if(name=="quick sort")
         return <QuickSort />
-        else if(name=="Heap Sort")
+        else if(name=="heap sort")
         return <HeapSort />
         else
         return null;
