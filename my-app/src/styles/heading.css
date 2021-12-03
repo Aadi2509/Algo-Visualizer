@@ -30,7 +30,7 @@
   }
 
   .Heading {
-    height:95vmin; /*just for testing purpose */
+    height:100vh; /*just for testing purpose */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,4 +57,12 @@
   .typing1{
     font-size: 4rem;
   }
+}
+
+@media screen and (max-width:680px)
+{
+  .typing1{
+    font-size: 2rem;
+  }
+
 }

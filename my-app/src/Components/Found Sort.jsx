@@ -39,7 +39,9 @@ function FoundSort(){
     }
 
     return(<>
+    <div className="marginTop">
     {findSort()}
+    </div>
     </>)
 
 };

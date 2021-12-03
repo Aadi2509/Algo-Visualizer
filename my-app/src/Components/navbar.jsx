@@ -4,29 +4,67 @@ import {Link} from "react-router-dom";
 
 import logo from "../images/logoWhite.png";
 
-const Example = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
+function Navbar(props){
+  
+  const [showNav,setshowNav]=useState("false");
+  const [areaControl,setareaControl]=useState("false");
 
-  const toggle = () => setIsOpen(!isOpen);
+  const cancelImage={
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+  }
+
+  const navStyle={
+    transform: "translateX(0%)"
+  }
+
+  function handleClick(){
+    if(showNav==="false")
+    {
+      setshowNav("true");
+    }
+    else
+    {
+      setshowNav("false");
+    }
+
+    if(areaControl==="true")
+    {
+      setareaControl("false");
+    }
+    else
+    {
+      setareaControl("true");
+    }
+    console.log(showNav);
+  }
+
 
   return (
+    <>
       <div className="flex navbar">
         <div className="headerLogo">
           <a href="/"><img className="img__logo" src={logo} /></a>
         </div>
-        <nav className="flex__gap">
+
+        <button style={showNav==="true"?cancelImage:null} aria-controls="primary-navigation" className="mobile-toggle" aria-expanded={areaControl} onClick={handleClick} data-visible={showNav}><span className="sr-only">Menu</span></button>
+        <nav>
+        <ul style={showNav==="true"?navStyle:null} id="primary-navigation" className="primary-navigation flex">
            <li className="nav__child">
-             <Link className="nav__links" to="/quadratic">
+             {/* <Link className="nav__links" to="/quadratic">
                   Quadratic 
-             </Link>
+             </Link> */}
+             <a href="#quadratic-algorithms" className="nav__links">Quadratic</a>
            </li>
            <li className="nav__child">
-               <Link to="/logarithmic">
+               <Link className="nav__links" to="/logarithmic">
                   Logarithmic
                </Link>
            </li>
+          </ul>
         </nav>
       </div>
+      </>
 
 
     /* // <div>
@@ -58,4 +96,4 @@ const Example = (props) => {
   );
 }
 
-export default Example;
+export default Navbar;

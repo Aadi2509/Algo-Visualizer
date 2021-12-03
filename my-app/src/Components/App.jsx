@@ -9,9 +9,11 @@ function App()
 {
     return (
     <React.StrictMode>
+    <div className="marginTop">
       <Heading></Heading>
       <Cards heading="Quadratic Sorting Algorithms" array={quadraticContent}/>
       <Cards heading="Logarithmic Sorting Algorithms" array={logContent} />
+      </div>
     </React.StrictMode>
     );
 
