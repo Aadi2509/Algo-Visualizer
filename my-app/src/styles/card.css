@@ -21,6 +21,7 @@
     min-height: 23rem;
     /* max-height: 23rem; */
     overflow: hidden;
+    margin:1rem 2rem;
   }
   
   .Card__Circle{
@@ -45,6 +46,7 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.625rem;
+    
     color: #ffffff;
     mix-blend-mode: difference;
   }

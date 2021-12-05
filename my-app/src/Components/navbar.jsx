@@ -15,7 +15,8 @@ function Navbar(props){
   }
 
   const navStyle={
-    transform: "translateX(0%)"
+    transform: "translateX(0%)",
+    backdropFilter: "blur(3em)"
   }
 
   function handleClick(){
@@ -51,10 +52,9 @@ function Navbar(props){
         <nav>
         <ul style={showNav==="true"?navStyle:null} id="primary-navigation" className="primary-navigation flex">
            <li className="nav__child">
-             {/* <Link className="nav__links" to="/quadratic">
+             <Link className="nav__links" to="/#quadratic-algorithms">
                   Quadratic 
-             </Link> */}
-             <a href="#quadratic-algorithms" className="nav__links">Quadratic</a>
+             </Link>
            </li>
            <li className="nav__child">
                <Link className="nav__links" to="/logarithmic">

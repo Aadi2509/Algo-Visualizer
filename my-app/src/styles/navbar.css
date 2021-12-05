@@ -6,12 +6,14 @@
 
    .navbar{
      /* margin:1.54rem; */
-     padding: 1.5rem 0;
+     padding: 0.8em min(3rem,3vw);
      position: fixed;  
-    inset:0 0 90% 0;
+     inset:0 0 90% 0;
      justify-content: space-between;
      align-items: center;
      z-index: 100;
+     background: hsl(0 0% 0% / 0.3);
+    backdrop-filter: blur(1em);
    }
 
   .flex{
@@ -19,22 +21,22 @@
     gap:var(--gap,2rem);
   }
 
-  .primary-navigation{
+  /* .primary-navigation{
     padding: 3rem 2rem;
     margin: 0;
     background: hsl(0 0% 0% / 0.3);
     backdrop-filter: blur(1em);
-  }
+  } */
 
-   .headerLogo{
+   /* .headerLogo{
     padding:1.5em 2em 1.5em 5em;
     background: hsl(0 0% 0% / 0.3);
     backdrop-filter: blur(1em);
-   }
+   } */
 
   .img__logo{
-    height:40px;
-    width:40px;
+    width: 3.8rem;
+    aspect-ratio: 1;
   }
 
   .mobile-toggle{
@@ -62,11 +64,11 @@
       align-items: center;
       padding: min(30vh, 7em) 0;
       --gap:3em;
-      background-color: steelblue;
       height:100vh;
-      background: hsl(0 0% 0% / 0.3);
-    backdrop-filter: blur(1em);
-    transform: translateX(100%);
+      background-color: #3D0000;
+      /* background: hsl(0 0% 0% / 0.3); */
+      transform: translateX(100%);
+      z-index:110;
     }
 
     .nav__child{
@@ -76,15 +78,15 @@
     /* not visible on small screen  */
     .mobile-toggle{
       display: block;
-      position: absolute;
-      width: 2.3rem;
+      position: fixed;
+      width: 3rem;
       background: url(../images/Hamburger-white-small.png);
       background-size: cover;
       background-repeat: no-repeat;
       aspect-ratio: 1;
       z-index:9999;
-      top:3rem;
-      right:2rem;
+      top: min(2rem,2vh);
+      right:min(2rem,10vw);
     }
 
     .mobile-toggle[data-visible="true"]

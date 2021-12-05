@@ -1,12 +1,13 @@
 import React from "react";
-import { Container, Row, Col } from 'reactstrap';
 import SectionTitle from "./SectionTitle";
 import Card from "./Card";
 import '../styles/cards.css';
 
 function Cards(props){
     return (<div className="cards">
-        <SectionTitle heading={props.heading} className="cards__title"></SectionTitle>
+      <div className="cards__title">
+        <SectionTitle heading={props.heading} ></SectionTitle>
+      </div>
             <div className="cards__container">
             {props.array.map(content => {
                return (
