@@ -1,0 +1,32 @@
+.full-height{
+    padding-top:7rem;
+    min-height: 83vh;
+}
+
+.heading{
+    text-align: center;
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.array_flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.element{
+    height:50px;
+    width:50px;
+    border:2px solid black;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
