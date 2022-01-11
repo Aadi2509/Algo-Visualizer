@@ -1,8 +1,20 @@
 import React from 'react';
+import insertionSort from "../../SortingAlgorithms/insertionSortAlgo";
+import $ from "jquery";
+import Elements from "./Elements";
 
 function InsertionSort()
 {
-    return <h1>This is Insertion Sort</h1>
+
+    function insertionSortHelper(elements)
+    {
+        insertionSort(elements);
+    }
+
+    return (
+        <Elements sort_name="Insertion Sort" sort_algo={insertionSortHelper}></Elements>
+    );
+
 }
 
 export default InsertionSort;
